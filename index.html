@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <meta charset="windows-1251">
+    <title>Головна сторінка</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script type="text/javascript">
+        function showGreeting() {
+            alert("Вітаю на моєму сайті!");
+        }
+        
+        function showCurrentDate() {
+            var today = new Date();
+            var dateString = today.getDate() + "." + (today.getMonth() + 1) + "." + today.getFullYear();
+            document.getElementById("date-display").innerHTML = "Сьогоднішня дата: " + dateString;
+        }
+    </script>
+</head>
+<body onload="showCurrentDate()"> <a name="top"></a>
+    
+    <h1>Ласкаво просимо на мій сайт!</h1>
+    
+    <ul class="nav-menu">
+        <li><a href="story.html">Історії</a></li>
+        <li><a href="skills.html">Навички</a></li>
+        <li><a href="contact.html">Послуги</a></li>
+    </ul>
+    
+    <div class="content-block">
+        <h3>Про мене</h3>
+        <p>Привіт! Мене звати <b>Ліза</b>. Мені 18 років.</p>
+        <p>Я студентка 1 курсу факультету <i>міжнародної економіки</i> Харківського національного університету імені В.Н. Каразіна.</p>
+        
+        <div style="text-align: center; margin: 30px 0;">
+            <button class="js-button" onclick="showGreeting()">Кнопочка вітання</button>
+            <p id="date-display" style="margin-top: 15px; color: #718096;"></p>
+        </div>
+
+        <h3>Відеоматеріали</h3>
+        <div class="video-container">
+            <p>Відео про мій університет:</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=rDE5vtfPe5Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
+        <h3>Декілька фото з мого життя</h3>
+        <p style="text-align: center;">Хочу поділитися з вами фото з свого життя.</p>
+        
+        <div class="gallery">
+            <img src="images/img1.jpg" alt="Фото 1">
+            <img src="images/img2.jpg" alt="Фото 2">
+            <img src="images/img3.jpg" alt="Фото 3">
+        </div>
+    </div>
+
+    <div class="site-footer">
+        <p>© 2026. Розроблено студенткою ХНУ ім. В.Н. Каразіна: <b>Єлизаветою</b>.</p>
+        <p>Телефон для зв'язку: +49 (ххх) ххх-хх-хх</p>
+        <p>
+            <a href="https://t.me/telegram" target="_blank">Telegram</a> | 
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </p>
+    </div>
+</body>
+</html>
